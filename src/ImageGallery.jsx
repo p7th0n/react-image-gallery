@@ -599,6 +599,8 @@ export default class ImageGallery extends React.Component {
               'image-gallery-bullet ' + (
                 currentIndex === index ? 'active' : '')}
 
+            title={ '  ' + item.description + '  '}
+
             onTouchStart={event => this.slideToIndex.call(this, index, event)}
             onClick={event => this.slideToIndex.call(this, index, event)}>
           </li>
